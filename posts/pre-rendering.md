@@ -1,7 +1,7 @@
 ---
 title: 'Our Previous Projects'
-date_original: '2021-10-18'
-last_update: '2021-10-18'
+date: '2021-10-18'
+update: '2021-10-18'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

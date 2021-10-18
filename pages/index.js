@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date_original, last_update, title }) => (
+          {allPostsData.map(({ id, date, update, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
@@ -33,9 +33,9 @@ export default function Home({ allPostsData }) {
               <br />
               <small className={utilStyles.lightText}>
                 <p>Uploaded: </p>
-                <Date dateString={date_original} />
+                <Date dateString={date} />
                 <p> Last Updated: </p>
-                <Date dateString={last_update}/>
+                <Date dateString={update}/>
               </small>
             </li>
           ))}
