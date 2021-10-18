@@ -32,7 +32,10 @@ export default function Home({ allPostsData }) {
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <p>Uploaded: </p><Date dateString={date} /><p> Last Updated: </p><Date dateString={update}/>
+              <section>
+                <p>Uploaded: <Date dateString={date} /></p>
+                <p> Last Updated: <Date dateString={update}/></p>
+              </section>
               </small>
             </li>
           ))}
