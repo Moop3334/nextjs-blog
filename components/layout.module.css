@@ -18,6 +18,21 @@
     padding: 20px;
   }
 
+  .navbar {
+    display: grid;
+    grid-auto-columns: 90px;
+    grid-gap: 5px;
+    background-color: rgb(0, 153, 255);
+    padding: 20px;
+  }
+
+  .navbar > div {
+    background-color: rgb(0, 153, 255);
+    color: azure;
+    text-align: center;
+    padding: 5px;
+  }
+
   .footer > div {
     background-color: lightseagreen;
     color: wheat;
