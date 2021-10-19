@@ -33,8 +33,7 @@ export default function Home({ allPostsData }) {
               <br />
               <small className={utilStyles.lightText}>
               <section>
-                <p>Uploaded: <Date dateString={date} /></p>
-                <p> Last Updated: <Date dateString={update}/></p>
+                <p>Uploaded: <Date dateString={date} /> Last Updated: <Date dateString={update}/></p>
               </section>
               </small>
             </li>
