@@ -14,12 +14,12 @@
     display: grid;
     grid-auto-columns: 90px;
     grid-gap: 5px;
-    background-color: darkgray;
+    background-color: rgba(0, 255, 98, 0.329);
     padding: 20px;
   }
 
   .footer > div {
-    background-color: darkgray;
+    background-color: rgba(0, 255, 98, 0.329);
     text-align: center;
     padding: 5px;
   }
