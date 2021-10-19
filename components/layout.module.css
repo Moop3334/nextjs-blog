@@ -20,6 +20,7 @@
 
   .footer > div {
     background-color: rgba(0, 255, 98, 0.329);
+    color: wheat;
     text-align: center;
     padding: 5px;
   }
