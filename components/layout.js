@@ -10,6 +10,28 @@ export const siteTitle = 'Robot Fight Club'
 export default function Layout({ children, home }) {
   return (
     <div>
+      <div className={styles.navbar}>
+        <Link href="/">
+          <b className={styles.gridItem1}>
+            <Image
+              src="/images/profile.jpg"
+              height={20}
+              width={20}
+              alt={name}
+            />
+            <h1 className={utilStyles.navImg}>
+              Home
+            </h1>
+          </b>
+        </Link>
+        <Link href="/">
+          <b className={styles.gridItem1}>
+            <h1 className= {utilStyles.navTxt}>
+              About Us:(WIP)
+            </h1>
+          </b>
+        </Link>
+      </div>
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
@@ -26,40 +48,42 @@ export default function Layout({ children, home }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-        <header className={styles.header}>
-          {home ? (
-            <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt={name}
-              />
-              <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            </>
-          ) : (
-            <>
-              <Link href="/">
-                <a>
-                  <Image
-                    priority
-                    src="/images/profile.jpg"
-                    className={utilStyles.borderCircle}
-                    height={108}
-                    width={108}
-                    alt={name}
-                  />
-                </a>
-              </Link>
-              <h2 className={utilStyles.headingLg}>
+        <header>
+          <div className={styles.header}>
+            {home ? (
+              <>
+                <Image
+                  priority
+                  src="/images/profile.jpg"
+                  className={utilStyles.borderCircle}
+                  height={144}
+                  width={144}
+                  alt={name}
+                />
+                <h1 className={utilStyles.heading2Xl}>{name}</h1>
+              </>
+            ) : (
+              <>
                 <Link href="/">
-                  <a className={utilStyles.colorInherit}>{name}</a>
+                  <a>
+                    <Image
+                      priority
+                      src="/images/profile.jpg"
+                      className={utilStyles.borderCircle}
+                      height={108}
+                      width={108}
+                      alt={name}
+                    />
+                  </a>
                 </Link>
-              </h2>
-            </>
-          )}
+                <h2 className={utilStyles.headingLg}>
+                  <Link href="/">
+                    <a className={utilStyles.colorInherit}>{name}</a>
+                  </Link>
+                </h2>
+              </>
+            )}
+          </div>
         </header>
         <main>{children}</main>
         {!home && (
@@ -72,7 +96,7 @@ export default function Layout({ children, home }) {
       </div>
       <div className={styles.footer}>
         <Link href="https://twitter.com/STSRobotics">
-          <a className={styles.footerItem1}>
+          <a className={styles.gridItem1}>
             <Image
               src="/images/twitter.jpg"
               height={20}
@@ -85,7 +109,7 @@ export default function Layout({ children, home }) {
           </a>
         </Link>
         <Link href="https://twitter.com/STSRobotics">
-          <a className={styles.footerItem1}>
+          <a className={styles.gridItem1}>
             <Image
               src="/images/instagram.jpg"
               height={20}
