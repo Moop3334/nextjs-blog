@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
             </h1>
           </b>
         </Link>
-        <Link href="/">
+        <Link href="/about">
           <b className={styles.gridItem1}>
             <h1 className= {utilStyles.navTxt}>
               About Us:(WIP)
