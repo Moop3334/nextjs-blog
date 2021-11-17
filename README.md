@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+If you're here from the robotics team and aren't Owen, turn back now before you descend into insanity.

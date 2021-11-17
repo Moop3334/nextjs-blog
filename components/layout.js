@@ -15,8 +15,8 @@ export default function Layout({ children, home }) {
           <b className={styles.gridItem1}>
             <Image
               src="/images/profile.jpg"
-              height={20}
-              width={20}
+              height={24}
+              width={24}
               alt={name}
             />
             <h1 className={utilStyles.navImg}>
