@@ -21,7 +21,7 @@ export default function About({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          We are STS Robot Fight Club, a FIRST Robotics team based out of Strathcona-Tweedsmir School. Our team was established during the 2020-2021 school year, and while we originally only had one team, we expanded our ranks this year to include a Grade 10 and Grade 11 Team. We will probably expand our numbers next year as well to include a Grade 12 team as well.
+          We are STS Robot Fight Club, a FIRST Robotics team based out of Strathcona-Tweedsmur School. Our team was established during the 2020-2021 school year, and while we originally only had one team, we expanded our ranks this year to include a Grade 10 and Grade 11 Team. We will probably expand our numbers next year as well to include a Grade 12 team as well.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
